@@ -29,7 +29,7 @@ public abstract class ClockState {
     	// the entry action of the state, which is empty (no action) by default
     	System.out.println("entering " + this.getClass().getName()); }; 
     	
-    protected void exit() {
+    private void exit() {
     	// the exit action of the state, which is empty (no action) by default
     	System.out.println("exiting " + this.getClass().getName()); };
     	

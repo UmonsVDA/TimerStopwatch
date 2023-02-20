@@ -7,13 +7,13 @@ public abstract class AbstractStopwatch extends ClockState {
 
 	//This is a composite state, so we need to defer its
 	//creation to its initial substate ResetStopwatch
-	public static AbstractStopwatch initialState = ResetStopwatch.Instance();
+	private static AbstractStopwatch initialState = ResetStopwatch.Instance();
 	public static AbstractStopwatch historyState;
 
 	// totalTime and lapTime need to be static, since their values
 	// need to be shared between all Stopwatch substates.
-	protected static int totalTime;
-	protected static int lapTime;
+	static int totalTime;
+	static int lapTime;
 	
     // these getters are needed for testing purposes
 	public static int getTotalTime() {return totalTime;}

@@ -10,7 +10,7 @@ import states.timer.*;
 
 public class TestScenarios {
 
-	Context c;
+	private Context c;
 	
     @Before
     public void setup() {

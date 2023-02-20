@@ -5,9 +5,9 @@ import states.EventListener;
 
 public abstract class AbstractGUI {
 
-    protected EventListener observer;
+    EventListener observer;
     
-    public AbstractGUI(EventListener o) {
+    AbstractGUI(EventListener o) {
     	observer = o;
     	initGUI();
     	addEventListener();

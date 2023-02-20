@@ -6,10 +6,10 @@ import states.timer.AbstractTimer;
 
 import org.junit.Before;
 
-public abstract class TestGUIAbstract {
+abstract class TestGUIAbstract {
 
-	protected Context c;
-	protected HeadlessGUI g;
+	Context c;
+	HeadlessGUI g;
 
     @Before
     public void setup() {
