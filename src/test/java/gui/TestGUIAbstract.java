@@ -1,17 +1,15 @@
 package gui;
 
-import gui.*;
+import org.junit.jupiter.api.BeforeEach;
 import states.Context;
 import states.timer.AbstractTimer;
-
-import org.junit.Before;
 
 abstract class TestGUIAbstract {
 
 	Context c;
 	HeadlessGUI g;
 
-    @Before
+    @BeforeEach
     public void setup() {
     	c = new Context();
 
